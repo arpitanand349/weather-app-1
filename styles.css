@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.title {
+    font-size: 2rem;
+    color: #2d3e50;
+    margin-bottom: 20px;
+}
+
+.city-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.city-input:focus {
+    border-color: #4fa3f7;
+}
+
+.btn {
+    background-color: #4fa3f7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3578e5;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.temp {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.description {
+    font-size: 1rem;
+    color: #777;
+}
+
+.city-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4fa3f7;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #ff4747;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
